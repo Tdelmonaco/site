@@ -543,10 +543,15 @@
     }
 
     function showBusinessPlan() {
-      document.getElementById("businessOverview").classList.add("hidden");
+      const overview = document.getElementById("businessOverview");
+      overview.classList.add("hidden");
+      overview.style.display = "none";
+
       const plan = document.getElementById("businessPlan");
       plan.classList.remove("hidden");
       plan.classList.add("show");
+      plan.style.display = "block";
+      plan.style.opacity = "1";
       plan.scrollIntoView({ behavior: 'smooth' });
     }
 
