@@ -293,6 +293,111 @@
       margin: 0;
     }
   </style>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0 20px 100px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #2ecc71, #27ae60);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    section {
+      background: white;
+      margin: 20px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      max-width: 1000px;
+    }
+
+    h2, h3 {
+      color: #27ae60;
+      margin-top: 30px;
+    }
+
+    .highlight-box {
+      background: #e9f8ef;
+      border-left: 5px solid #27ae60;
+      padding: 20px;
+      border-radius: 8px;
+      transition: max-height 0.5s ease, opacity 0.5s ease;
+      overflow: hidden;
+    }
+
+    .highlight-box ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .highlight-box li {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+    }
+
+    .highlight-box li span {
+      font-size: 1.2rem;
+      margin-right: 10px;
+    }
+
+    .toggle-button {
+      background: #27ae60;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px 0 0;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .toggle-button:hover {
+      background: #219150;
+    }
+
+    .collapsed {
+      max-height: 0;
+      opacity: 0;
+      padding: 0 20px;
+    }
+
+    .expanded {
+      max-height: 1000px;
+      opacity: 1;
+      padding: 20px;
+    }
+
+    .plan-summary ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .plan-summary h3 {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
 
@@ -562,111 +667,6 @@
     }
   </script>
 <div id="businessPlan" class="hidden">
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f4f6f9;
-      margin: 0;
-      padding: 0 20px 100px;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(to right, #2ecc71, #27ae60);
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
-
-    section {
-      background: white;
-      margin: 20px auto;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      max-width: 1000px;
-    }
-
-    h2, h3 {
-      color: #27ae60;
-      margin-top: 30px;
-    }
-
-    .highlight-box {
-      background: #e9f8ef;
-      border-left: 5px solid #27ae60;
-      padding: 20px;
-      border-radius: 8px;
-      transition: max-height 0.5s ease, opacity 0.5s ease;
-      overflow: hidden;
-    }
-
-    .highlight-box ul {
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
-    }
-
-    .highlight-box li {
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-    }
-
-    .highlight-box li span {
-      font-size: 1.2rem;
-      margin-right: 10px;
-    }
-
-    .toggle-button {
-      background: #27ae60;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      margin: 10px 0 0;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: background 0.3s ease;
-    }
-
-    .toggle-button:hover {
-      background: #219150;
-    }
-
-    .collapsed {
-      max-height: 0;
-      opacity: 0;
-      padding: 0 20px;
-    }
-
-    .expanded {
-      max-height: 1000px;
-      opacity: 1;
-      padding: 20px;
-    }
-
-    .plan-summary ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-
-    .plan-summary h3 {
-      margin-top: 20px;
-    }
-  </style>
 
   <header>
     <h1>BTR Health Business Plan</h1>
