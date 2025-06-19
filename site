@@ -436,6 +436,9 @@
         <h2>Customised & Creative Services</h2>
         <p>There is a vast opportunity for custom-designed services tailored to the interests of participants. This includes one-off or ongoing group-based activities such as yoga, esports/gaming sessions, gym training, art therapy, music circles, sports days, and more. These offerings support holistic health, self-expression, and joyful living.</p>
       </section>
+      <div style="text-align:center; margin: 20px 0;">
+        <button class="continue-button" onclick="showBusinessPlan()">Continue to Business Plan</button>
+      </div>
     </div>
   </div>
 
@@ -521,14 +524,19 @@
       document.getElementById("secondMainContent").classList.add("hidden");
       document.getElementById("businessOverview").classList.remove("hidden");
     }
-  </script>
 
-</body>
-</html> <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>BTR Health – Business Plan</title>
+    function showBusinessPlan() {
+      document.getElementById("businessOverview").classList.add("hidden");
+      document.getElementById("businessPlan").classList.remove("hidden");
+    }
+
+    function toggleHighlights() {
+      const box = document.getElementById('highlights');
+      box.classList.toggle('collapsed');
+      box.classList.toggle('expanded');
+    }
+  </script>
+<div id="businessPlan" class="hidden">
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -634,97 +642,88 @@
       margin-top: 20px;
     }
   </style>
-</head>
-<body>
 
-<header>
-  <h1>BTR Health Business Plan</h1>
-  <p>NDIS Support Services – Sub-Businesses: Through Faith & BTR Care</p>
-  <p>Prepared by: Beshoy, Trent, Rashaun • ABN: 46 686 882 020 • Melbourne, June 2025</p>
-</header>
+  <header>
+    <h1>BTR Health Business Plan</h1>
+    <p>NDIS Support Services – Sub-Businesses: Through Faith & BTR Care</p>
+    <p>Prepared by: Beshoy, Trent, Rashaun • ABN: 46 686 882 020 • Melbourne, June 2025</p>
+  </header>
 
-<section>
-  <h2>🔑 Key Highlights</h2>
-  <button class="toggle-button" onclick="toggleHighlights()">Show / Hide Highlights</button>
-  <div id="highlights" class="highlight-box collapsed">
+  <section>
+    <h2>🔑 Key Highlights</h2>
+    <button class="toggle-button" onclick="toggleHighlights()">Show / Hide Highlights</button>
+    <div id="highlights" class="highlight-box collapsed">
+      <ul>
+        <li><span>📍</span> Registered NDIS Provider based in Melbourne's Southeast</li>
+        <li><span>🌟</span> Two unique sub-brands: <strong>Through Faith</strong> & <strong>BTR Care</strong></li>
+        <li><span>📈</span> 12 participants in Year 1, scaling to 50 by Year 3</li>
+        <li><span>💰</span> Projected Year 1 Revenue: <strong>$597,800</strong>, Net Margin: <strong>32.71%</strong></li>
+        <li><span>💼</span> Lean startup model with only <strong>$28,400</strong> in startup costs</li>
+        <li><span>📣</span> Strong marketing strategy using social media, billboards & partnerships</li>
+        <li><span>✅</span> 100% Compliant with NDIS Quality and Safeguards Commission standards</li>
+        <li><span>🤝</span> Built on personalised, values-driven disability care and support</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="plan-summary">
+    <h2>📄 Summarised Business Plan</h2>
+
+    <h3>1. Executive Summary</h3>
+    <p>BTR Health, pronounced “Better,” delivers NDIS services across Melbourne with a focus on empowerment and care. The business operates two sub-brands: Through Faith (spiritual supports) and BTR Care (core disability services). Starting with 12 participants, we aim to grow to 50 by Year 3, while maintaining high-quality, NDIS-compliant service delivery.</p>
+
+    <h3>2. Structure & Team</h3>
     <ul>
-      <li><span>📍</span> Registered NDIS Provider based in Melbourne's Southeast</li>
-      <li><span>🌟</span> Two unique sub-brands: <strong>Through Faith</strong> & <strong>BTR Care</strong></li>
-      <li><span>📈</span> 12 participants in Year 1, scaling to 50 by Year 3</li>
-      <li><span>💰</span> Projected Year 1 Revenue: <strong>$597,800</strong>, Net Margin: <strong>32.71%</strong></li>
-      <li><span>💼</span> Lean startup model with only <strong>$28,400</strong> in startup costs</li>
-      <li><span>📣</span> Strong marketing strategy using social media, billboards & partnerships</li>
-      <li><span>✅</span> 100% Compliant with NDIS Quality and Safeguards Commission standards</li>
-      <li><span>🤝</span> Built on personalised, values-driven disability care and support</li>
+      <li>Private company limited by shares, registered with ASIC</li>
+      <li>Founders: Beshoy, Trent, Rashaun</li>
+      <li>Mission: Exceptional, person-focused support</li>
+      <li>Vision: To become Melbourne’s most trusted NDIS provider</li>
     </ul>
-  </div>
-</section>
 
-<section class="plan-summary">
-  <h2>📄 Summarised Business Plan</h2>
+    <h3>3. Market</h3>
+    <ul>
+      <li>Targeting Southeast Melbourne (Dandenong, Frankston, Casey)</li>
+      <li>Serves adults 18–65 with psychosocial, intellectual, or physical disabilities</li>
+      <li>$1 billion+ local market with 20,000+ NDIS participants</li>
+      <li>Low initial market share means high growth potential</li>
+    </ul>
 
-  <h3>1. Executive Summary</h3>
-  <p>BTR Health, pronounced “Better,” delivers NDIS services across Melbourne with a focus on empowerment and care. The business operates two sub-brands: Through Faith (spiritual supports) and BTR Care (core disability services). Starting with 12 participants, we aim to grow to 50 by Year 3, while maintaining high-quality, NDIS-compliant service delivery.</p>
+    <h3>4. Services</h3>
+    <ul>
+      <li><strong>Through Faith:</strong> Community engagement, church/temple accompaniment</li>
+      <li><strong>BTR Care:</strong> Daily living assistance, therapy, support coordination</li>
+      <li><strong>Supported Getaways:</strong> Travel and holiday support for NDIS participants</li>
+    </ul>
 
-  <h3>2. Structure & Team</h3>
-  <ul>
-    <li>Private company limited by shares, registered with ASIC</li>
-    <li>Founders: Beshoy, Trent, Rashaun</li>
-    <li>Mission: Exceptional, person-focused support</li>
-    <li>Vision: To become Melbourne’s most trusted NDIS provider</li>
-  </ul>
+    <h3>5. Marketing & Sales</h3>
+    <ul>
+      <li>Social media (Facebook, Instagram, TikTok, LinkedIn)</li>
+      <li>Billboards in Dandenong and Frankston</li>
+      <li>Referral programs & direct outreach to plan managers</li>
+      <li>Website & Google My Business SEO</li>
+    </ul>
 
-  <h3>3. Market</h3>
-  <ul>
-    <li>Targeting Southeast Melbourne (Dandenong, Frankston, Casey)</li>
-    <li>Serves adults 18–65 with psychosocial, intellectual, or physical disabilities</li>
-    <li>$1 billion+ local market with 20,000+ NDIS participants</li>
-    <li>Low initial market share means high growth potential</li>
-  </ul>
+    <h3>6. Operations</h3>
+    <ul>
+      <li>Home-based team with virtual office for SEO</li>
+      <li>Use of NDIS software (e.g. Brevity)</li>
+      <li>Initial staffing: 3 directors/support workers</li>
+      <li>Expansion based on growth, with structured recruitment</li>
+    </ul>
 
-  <h3>4. Services</h3>
-  <ul>
-    <li><strong>Through Faith:</strong> Community engagement, church/temple accompaniment</li>
-    <li><strong>BTR Care:</strong> Daily living assistance, therapy, support coordination</li>
-    <li><strong>Supported Getaways:</strong> Travel and holiday support for NDIS participants</li>
-  </ul>
-
-  <h3>5. Marketing & Sales</h3>
-  <ul>
-    <li>Social media (Facebook, Instagram, TikTok, LinkedIn)</li>
-    <li>Billboards in Dandenong and Frankston</li>
-    <li>Referral programs & direct outreach to plan managers</li>
-    <li>Website & Google My Business SEO</li>
-  </ul>
-
-  <h3>6. Operations</h3>
-  <ul>
-    <li>Home-based team with virtual office for SEO</li>
-    <li>Use of NDIS software (e.g. Brevity)</li>
-    <li>Initial staffing: 3 directors/support workers</li>
-    <li>Expansion based on growth, with structured recruitment</li>
-  </ul>
-
-  <h3>7. Financial Summary</h3>
-  <ul>
-    <li><strong>Startup Costs:</strong> $28,400 (includes audit, consultants, tech)</li>
-    <li><strong>Revenue (Year 1):</strong> $597,800</li>
-    <li><strong>Expenses:</strong> $22,000 + $260K director wages</li>
-    <li><strong>Retained Earnings:</strong> $195,545 after tax</li>
-    <li><strong>Net Margin:</strong> 32.71%</li>
-  </ul>
+    <h3>7. Financial Summary</h3>
+    <ul>
+      <li><strong>Startup Costs:</strong> $28,400 (includes audit, consultants, tech)</li>
+      <li><strong>Revenue (Year 1):</strong> $597,800</li>
+      <li><strong>Expenses:</strong> $22,000 + $260K director wages</li>
+      <li><strong>Retained Earnings:</strong> $195,545 after tax</li>
+      <li><strong>Net Margin:</strong> 32.71%</li>
+    </ul>
 
   <h3>8. Compliance</h3>
   <p>Fully aligned with NDIS Quality and Safeguards Commission. All services promote participant choice, control, and community engagement.</p>
-</section>
-
-<script>
-  function toggleHighlights() {
-    const box = document.getElementById('highlights');
-    box.classList.toggle('collapsed');
-    box.classList.toggle('expanded');
-  }
-</script>
+  </section>
+</div>
 
 </body>
-</html> html 2
+</html>
