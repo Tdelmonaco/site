@@ -5,8 +5,8 @@
   <title>Partner Directory & BTR Health Intro</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; html 1
-      background: #f5f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #f5f7fa, #e8f5e9);
       margin: 0;
       color: #333;
       line-height: 1.6;
@@ -33,6 +33,7 @@
       text-align: center;
       padding: 20px;
       background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       transform: translateY(-30px);
       opacity: 0;
       transition: all 1s ease-out;
@@ -94,6 +95,7 @@
     .play-button:hover, .continue-button:hover {
       background: linear-gradient(135deg, #219653, #27ae60);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
     }
 
     .video-container {
@@ -128,6 +130,18 @@
     }
 
     #secondPage.active {
+      display: block;
+      opacity: 1;
+    }
+
+    /* Business plan section */
+    #businessPlan {
+      display: none;
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+
+    #businessPlan.show {
       display: block;
       opacity: 1;
     }
@@ -522,12 +536,18 @@
 
     function showBusinessOverview() {
       document.getElementById("secondMainContent").classList.add("hidden");
-      document.getElementById("businessOverview").classList.remove("hidden");
+      const overview = document.getElementById("businessOverview");
+      overview.classList.remove("hidden");
+      overview.style.display = "block";
+      overview.scrollIntoView({ behavior: 'smooth' });
     }
 
     function showBusinessPlan() {
       document.getElementById("businessOverview").classList.add("hidden");
-      document.getElementById("businessPlan").classList.remove("hidden");
+      const plan = document.getElementById("businessPlan");
+      plan.classList.remove("hidden");
+      plan.classList.add("show");
+      plan.scrollIntoView({ behavior: 'smooth' });
     }
 
     function toggleHighlights() {
